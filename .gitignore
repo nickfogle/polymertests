@@ -5,3 +5,8 @@ public
 client/bower_components
 dist
 /server/config/local.env.js
+mongod.lock
+polymertest-dev.0
+polymertest-dev.ns
+local.0
+local.ns

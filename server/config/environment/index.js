@@ -44,19 +44,19 @@ var all = {
   facebook: {
     clientID:     process.env.FACEBOOK_ID || 'id',
     clientSecret: process.env.FACEBOOK_SECRET || 'secret',
-    callbackURL:  'http://localhost:9000/auth/facebook/callback'
+    callbackURL:  'http://polymertests.herokuapp.com/oauth2callback'
   },
 
   twitter: {
     clientID:     process.env.TWITTER_ID || 'id',
     clientSecret: process.env.TWITTER_SECRET || 'secret',
-    callbackURL:  'http://localhost:9000/auth/twitter/callback'
+    callbackURL:  'http://polymertests.herokuapp.com/oauth2callback'
   },
 
   google: {
     clientID:     process.env.GOOGLE_ID || 'id',
     clientSecret: process.env.GOOGLE_SECRET || 'secret',
-    callbackURL:  'http://localhost:9000/auth/google/callback'
+    callbackURL:  'http://polymertests.herokuapp.com/oauth2callback'
   }
 };
 
