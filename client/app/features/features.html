@@ -1,5 +1,32 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
+<style>body {
+     font-family:'Helvetica Neue', Helvetica, Arial;
+     margin-top: 0;
+     padding: 0;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     -webkit-tap-highlight-color: rgba(0,0,0,0);
+     -webkit-touch-callout: none;
+   }
 
+   paper-checkbox {
+     padding: 20px 20px 20px 0;
+   }
+
+   section {
+     width: 300px;
+   }
+
+   paper-checkbox.blue::shadow #ink[checked] {
+     color: #4285f4;
+   }
+
+   paper-checkbox.blue::shadow #checkbox.checked {
+     border-color: #4285f4;
+   }
+</style>
 <div class="container">
    <br>
    <div horizontal layout>
