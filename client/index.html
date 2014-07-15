@@ -11,6 +11,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <script src="bower_components/platform/platform.js"></script>
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
       <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -23,10 +24,15 @@
       <link rel="stylesheet" href="app/account/login/login.css">
       <link rel="stylesheet" href="app/admin/admin.css">
       <link rel="stylesheet" href="app/app.css">
+      <link rel="stylesheet" href="app/features/features.css">
       <link rel="stylesheet" href="app/main/main.css">
       <!-- endinjector -->
       <!-- import polymer paper elements -->
-      <link rel="import" href="components/paper-elements/paper-elements.html">
+      <link rel="import" href="bower_components/polymer/polymer.html">
+      <link rel="import" href="bower_components/core-list/core-list.html">
+      <link rel="import" href="bower_components/paper-elements/paper-elements.html">
+      <link rel="import" href="bower_components/paper-checkbox/paper-checkbox.html">
+
       <!-- end polymer paper elements -->
     <!-- endbuild -->
   </head>
@@ -78,6 +84,8 @@
           <script src="app/account/signup/signup.controller.js"></script>
           <script src="app/admin/admin.controller.js"></script>
           <script src="app/admin/admin.js"></script>
+          <script src="app/features/features.controller.js"></script>
+          <script src="app/features/features.js"></script>
           <script src="app/main/main.controller.js"></script>
           <script src="app/main/main.js"></script>
           <script src="components/auth/auth.service.js"></script>
