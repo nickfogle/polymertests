@@ -10,3 +10,10 @@ polymertest-dev.0
 polymertest-dev.ns
 local.0
 local.ns
+polymertest.0
+polymertest.ns
+journal
+karma.conf.js
+.travis.yml
+.yo-rc.json
+.editorconfig
