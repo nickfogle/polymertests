@@ -2,10 +2,23 @@
 
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<voice-player autoplay text="Welcome to the jungle! hahaha just kidding!"></voice-player>
-<voice-recognition></voice-recognition>
+<voice-player id="mi-elemento" accent="en-US" text="Behold! The future of the web lies before you. Scroll down and enjoy"></voice-player>
+<script>
+var form = document.querySelector('#mi-form'),
+    element = document.querySelector('#mi-elemento');
 
-<style>body {
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    element.speak();
+});
+</script>
+<form id="mi-form">
+   <button name="button" style="display: block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; font-weight: normal; text-align: center; white-space: nowrap;vertical-align: middle; border: 1px solid transparent; border-radius: 4px; margin: 40px auto 0 auto;">What's this all about?</button>
+</form>
+
+
+<style>
+   body {
      font-family:'Helvetica Neue', Helvetica, Arial;
      margin-top: 0;
      padding: 0;
@@ -89,3 +102,6 @@
   </section>
 
 </div>
+
+
+<voice-recognition></voice-recognition>
