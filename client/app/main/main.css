@@ -28,3 +28,11 @@
     margin-top: 70px;
     border-top: 1px solid #E5E5E5;
 }
+
+paper-checkbox.blue::shadow #ink[checked] {
+  color: #4285f4;
+}
+
+paper-checkbox.blue::shadow #checkbox.checked {
+  border-color: #4285f4;
+}
