@@ -45,6 +45,13 @@ form.addEventListener('submit', function(e) {
    paper-checkbox.blue::shadow #checkbox.checked {
      border-color: #4285f4;
    }
+   paper-radio-group.blue paper-radio-button::shadow #ink[checked] {
+     color: #4285f4;
+   }
+
+   paper-radio-group.blue paper-radio-button::shadow #onRadio {
+     background-color: #4285f4;
+   }
 </style>
 <div class="container">
    <br>
@@ -104,4 +111,28 @@ form.addEventListener('submit', function(e) {
 </div>
 
 
-<voice-recognition></voice-recognition>
+  <section>
+
+    <h4>Keep Wi-Fi on during sleep</h4>
+
+    <paper-radio-group selected="2">
+      <paper-radio-button label="Always"></paper-radio-button><br>
+      <paper-radio-button label="Only when plugged in"></paper-radio-button><br>
+      <paper-radio-button label="Never"></paper-radio-button>
+    </paper-radio-group>
+
+  </section>
+
+  <br>
+
+  <section>
+
+    <h4>Wi-Fi frequency band</h4>
+
+    <paper-radio-group class="blue" selected="0">
+      <paper-radio-button label="Auto"></paper-radio-button><br>
+      <paper-radio-button label="5 GHz only"></paper-radio-button><br>
+      <paper-radio-button label="2.4 GHz only"></paper-radio-button>
+    </paper-radio-group>
+
+  </section>
