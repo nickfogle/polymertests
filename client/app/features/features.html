@@ -16,6 +16,10 @@ form.addEventListener('submit', function(e) {
 </form>
 
 <style>
+h1 {
+   text-align: center;
+}
+
 body {
    font-family:'Helvetica Neue', Helvetica, Arial;
    margin-top: 0;
@@ -149,8 +153,8 @@ paper-toggle-button.blue::shadow #toggleBar[checked] {
 
 <br>
 <br>
-<h1>Toggle Switch Buttons</h1>
 
+<h1>Toggle Switch Buttons</h1>
 <section>
 
    <div center horizontal layout>
@@ -169,4 +173,45 @@ paper-toggle-button.blue::shadow #toggleBar[checked] {
 </section>
 <br>
 <br>
+
+<h1>Next-Gen Input</h1>
+
+<section>
+
+    <paper-input label="Type something..."></paper-input>
+
+    <br>
+
+    <paper-input label="Type only numbers..." validate="^[0-9]*$" error="Input is not a number!"></paper-input>
+
+    <br>
+
+    <paper-input disabled label="I'm disabled"></paper-input>
+
+    <br>
+
+    <paper-input floatingLabel label="Floating label"></paper-input>
+
+    <br>
+
+    <paper-input floatingLabel label="Type only numbers... (floating)" validate="^[0-9]*$" error="Input is not a number!"></paper-input>
+
+    <br>
+
+    <paper-input multiline label="Type multiple lines here..."></paper-input>
+
+    <br>
+
+    <paper-input multiline rows="3" label="This input is 3 rows high"></paper-input>
+
+    <br>
+
+    <paper-input multiline maxRows="3" label="This input is at most 3 rows high"></paper-input>
+
+    <br>
+
+    <paper-input multiline floatingLabel label="Multiple lines and a floating label"></paper-input>
+
+  </section>
+
 </div>
