@@ -3,11 +3,11 @@
 <voice-player id="mi-elemento" accent="en-US" text="Behold! The future of the web lies before you. Scroll down and enjoy"></voice-player>
 <script>
 var form = document.querySelector('#mi-form'),
-    element = document.querySelector('#mi-elemento');
+element = document.querySelector('#mi-elemento');
 
 form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    element.speak();
+   e.preventDefault();
+   element.speak();
 });
 </script>
 
@@ -16,155 +16,157 @@ form.addEventListener('submit', function(e) {
 </form>
 
 <style>
-   body {
-     font-family:'Helvetica Neue', Helvetica, Arial;
-     margin-top: 0;
-     padding: 0;
-     -webkit-user-select: none;
-     -moz-user-select: none;
-     -ms-user-select: none;
-     user-select: none;
-     -webkit-tap-highlight-color: rgba(0,0,0,0);
-     -webkit-touch-callout: none;
-   }
+body {
+   font-family:'Helvetica Neue', Helvetica, Arial;
+   margin-top: 0;
+   padding: 0;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
+   -webkit-touch-callout: none;
+}
 
-   paper-checkbox {
-     padding: 20px 20px 20px 0;
-   }
+paper-checkbox {
+   padding: 20px 20px 20px 0;
+}
 
-   section {
-     width: 300px;
-   }
+section {
+   width: 300px;
+}
 
-   paper-checkbox.blue::shadow #ink[checked] {
-     color: #4285f4;
-   }
+paper-checkbox.blue::shadow #ink[checked] {
+   color: #4285f4;
+}
 
-   paper-checkbox.blue::shadow #checkbox.checked {
-     border-color: #4285f4;
-   }
-   paper-radio-group.blue paper-radio-button::shadow #ink[checked] {
-     color: #4285f4;
-   }
+paper-checkbox.blue::shadow #checkbox.checked {
+   border-color: #4285f4;
+}
+paper-radio-group.blue paper-radio-button::shadow #ink[checked] {
+   color: #4285f4;
+}
 
-   paper-radio-group.blue paper-radio-button::shadow #onRadio {
-     background-color: #4285f4;
-   }
-    paper-toggle-button.blue::shadow paper-radio-button::shadow #ink[checked] {
-      color: #4285f4;
-    }
+paper-radio-group.blue paper-radio-button::shadow #onRadio {
+   background-color: #4285f4;
+}
+paper-toggle-button.blue::shadow paper-radio-button::shadow #ink[checked] {
+   color: #4285f4;
+}
 
-    paper-toggle-button.blue::shadow paper-radio-button::shadow #onRadio {
-      background-color: #4285f4;
-    }
+paper-toggle-button.blue::shadow paper-radio-button::shadow #onRadio {
+   background-color: #4285f4;
+}
 
-    paper-toggle-button.blue::shadow #toggleBar[checked] {
-      background-color: #4285f4;
-    }
+paper-toggle-button.blue::shadow #toggleBar[checked] {
+   background-color: #4285f4;
+}
 </style>
 
 <div class="container">
    <br>
    <h1>Checklist</h1>
    <div horizontal layout>
-    <paper-checkbox></paper-checkbox>
-    <div vertical layout>
-      <h4>Notifications</h4>
-      <div>Notify me about updates to apps or games that I've downloaded</div>
-    </div>
-  </div>
+      <paper-checkbox></paper-checkbox>
+      <div vertical layout>
+         <h4>Notifications</h4>
+         <div>Notify me about updates to apps or games that I've downloaded</div>
+      </div>
+   </div>
 
-  <br>
+   <br>
 
-  <div horizontal layout>
-    <paper-checkbox checked></paper-checkbox>
-    <div vertical layout>
-      <h4>Auto-updates</h4>
-      <div>Auto-update apps over wifi only</div>
-    </div>
-  </div>
+   <div horizontal layout>
+      <paper-checkbox checked></paper-checkbox>
+      <div vertical layout>
+         <h4>Auto-updates</h4>
+         <div>Auto-update apps over wifi only</div>
+      </div>
+   </div>
 
-  <br>
+   <br>
 
-  <div horizontal layout>
-    <paper-checkbox></paper-checkbox>
-    <div vertical layout>
-      <h4>Clear search history</h4>
-      <div>Remove all the searches you have ever performed</div>
-    </div>
-  </div>
+   <div horizontal layout>
+      <paper-checkbox></paper-checkbox>
+      <div vertical layout>
+         <h4>Clear search history</h4>
+         <div>Remove all the searches you have ever performed</div>
+      </div>
+   </div>
 
-  <br>
+   <br>
 
-  <section>
+   <section>
 
-    <h3>Sound</h3>
+      <h3>Sound</h3>
 
-    <div center horizontal layout>
-      <div flex>Touch sounds</div>
-      <paper-checkbox class="blue" checked></paper-checkbox>
-    </div>
+      <div center horizontal layout>
+         <div flex>Touch sounds</div>
+         <paper-checkbox class="blue" checked></paper-checkbox>
+      </div>
 
-    <div center horizontal layout>
-      <div flex>Screen lock sound</div>
-      <paper-checkbox class="blue"></paper-checkbox>
-    </div>
+      <div center horizontal layout>
+         <div flex>Screen lock sound</div>
+         <paper-checkbox class="blue"></paper-checkbox>
+      </div>
 
-    <div center horizontal layout>
-      <div flex>Vibrate on touch</div>
-      <paper-checkbox class="blue"></paper-checkbox>
-    </div>
+      <div center horizontal layout>
+         <div flex>Vibrate on touch</div>
+         <paper-checkbox class="blue"></paper-checkbox>
+      </div>
 
-  </section>
+   </section>
 
-  <br>
-  <br>
+   <br>
+   <br>
 
-  <h1>Radio Buttons</h1>
-  <section>
+   <h1>Radio Buttons</h1>
+   <section>
 
-    <h4>Keep Wi-Fi on during sleep</h4>
+      <h4>Keep Wi-Fi on during sleep</h4>
 
-    <paper-radio-group selected="2">
+      <paper-radio-group selected="2">
       <paper-radio-button label="Always"></paper-radio-button><br>
       <paper-radio-button label="Only when plugged in"></paper-radio-button><br>
       <paper-radio-button label="Never"></paper-radio-button>
-    </paper-radio-group>
+   </paper-radio-group>
 
-  </section>
+</section>
 
-  <br>
+<br>
 
-  <section>
+<section>
 
-    <h4>Wi-Fi frequency band</h4>
+   <h4>Wi-Fi frequency band</h4>
 
-    <paper-radio-group class="blue" selected="0">
-      <paper-radio-button label="Auto"></paper-radio-button><br>
-      <paper-radio-button label="5 GHz only"></paper-radio-button><br>
-      <paper-radio-button label="2.4 GHz only"></paper-radio-button>
-    </paper-radio-group>
+   <paper-radio-group class="blue" selected="0">
+   <paper-radio-button label="Auto"></paper-radio-button><br>
+   <paper-radio-button label="5 GHz only"></paper-radio-button><br>
+   <paper-radio-button label="2.4 GHz only"></paper-radio-button>
+</paper-radio-group>
 
-  </section>
+</section>
 
-  <br>
-  <br>
+<br>
+<br>
 <h1>Toggle Switch Buttons</h1>
 
 <section>
 
-    <div center horizontal layout>
+   <div center horizontal layout>
       <div flex>Wi-Fi</div>
       <paper-toggle-button checked></paper-toggle-button>
-    </div>
+   </div>
 
-    <br>
-    <br>
+   <br>
+   <br>
 
-    <div center horizontal layout>
+   <div center horizontal layout>
       <div flex>Bluetooth</div>
       <paper-toggle-button class="blue"></paper-toggle-button>
-    </div>
+   </div>
 
-  </section>
-  </div>
+</section>
+<br>
+<br>
+</div>
