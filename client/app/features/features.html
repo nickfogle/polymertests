@@ -1,19 +1,4 @@
-<div ng-include="'components/navbar/navbar.html'"></div>
-
-<voice-player id="mi-elemento" accent="en-US" text="Behold! The future of the web lies before you. Scroll down and enjoy"></voice-player>
-<script>
-var form = document.querySelector('#mi-form'),
-element = document.querySelector('#mi-elemento');
-
-form.addEventListener('submit', function(e) {
-   e.preventDefault();
-   element.speak();
-});
-</script>
-
-<form id="mi-form">
-   <button class="btn btn-primary" style="display: block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; vertical-align: middle; border: 1px solid transparent; border-radius: 4px; margin: 40px auto 0 auto;">Voice Elements</button>
-</form>
+<!--BEGIN PAGE SPECIFIC STYLES -->
 
 <style>
 h1 {
@@ -89,6 +74,35 @@ section > div {
 }
 </style>
 
+<!--END PAGE SPECIFIC STYLES -->
+
+<!--LOAD NAVBAR -->
+
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<!--END NAVBAR -->
+
+<!--POLYMER VOICE ELEMENTS -->
+
+<voice-player id="mi-elemento" accent="en-US" text="Behold! The future of the web lies before you. Scroll down and enjoy"></voice-player>
+<script>
+var form = document.querySelector('#mi-form'),
+element = document.querySelector('#mi-elemento');
+
+form.addEventListener('submit', function(e) {
+   e.preventDefault();
+   element.speak();
+});
+</script>
+
+<form id="mi-form">
+   <button class="btn btn-primary" style="display: block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; vertical-align: middle; border: 1px solid transparent; border-radius: 4px; margin: 40px auto 0 auto;">Voice Elements</button>
+</form>
+
+<!-- END POLYMER VOICE ELEMENTS -->
+
+<!--POLYMER CHECKLIST ELEMENT -->
+
 <div class="container">
    <br>
    <h1>Checklist</h1>
@@ -119,6 +133,7 @@ section > div {
          <div>Remove all the searches you have ever performed</div>
       </div>
    </div>
+<!-- END POLYMER CHECKLIST ELEMENT -->
 
    <br>
 
@@ -147,6 +162,7 @@ section > div {
    <br>
 
    <h1>Radio Buttons</h1>
+   <br>
    <section>
 
       <h4>Keep Wi-Fi on during sleep</h4>
@@ -199,7 +215,7 @@ section > div {
 <br>
 
 <h1>Next-Gen Input</h1>
-
+<br>
 <section>
 
     <paper-input label="Type something..."></paper-input>
@@ -240,7 +256,7 @@ section > div {
 <br>
 <br>
 <h1>Sliders</h1>
- <section class="yellow-slider" style="800px">
+ <section class="yellow-slider" style="width:800px;">
 
     <div>Music, video, games &amp; other media</div>
     <paper-slider value="50"></paper-slider>
@@ -261,7 +277,7 @@ section > div {
 
   <br>
 
-  <section style="800px">
+  <section style="width:800px;">
 
     <div center horizontal layout>
       <div>R</div>
@@ -288,7 +304,7 @@ section > div {
 
   <br>
 
-  <section class="green-slider" style="800px">
+  <section class="green-slider" style="width:800px;">
 
     <div>Brightness</div>
     <br>
@@ -298,7 +314,7 @@ section > div {
 
   <br>
 
-  <section class="green-slider" style="800px">
+  <section class="green-slider" style="width:800px;">
 
     <div>
       <span>Ratings</span><span id="ratingsLabel"></span>
@@ -319,5 +335,5 @@ section > div {
   </div>
 <br>
 <br>
-
+<br>
 </div>
