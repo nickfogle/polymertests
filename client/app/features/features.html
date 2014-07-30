@@ -1,80 +1,69 @@
 <!--BEGIN PAGE SPECIFIC STYLES -->
-
 <style>
-h1 {
-   text-align: center;
-}
-
-body {
-   font-family:'Helvetica Neue', Helvetica, Arial;
-   margin-top: 0;
-   padding: 0;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
-   -webkit-tap-highlight-color: rgba(0,0,0,0);
-   -webkit-touch-callout: none;
-}
-
-paper-checkbox {
-   padding: 20px 20px 20px 0;
-}
-
-section {
-   width: 350px;
-}
-
-paper-checkbox.blue::shadow #ink[checked] {
-   color: #4285f4;
-}
-
-paper-checkbox.blue::shadow #checkbox.checked {
-   border-color: #4285f4;
-}
-paper-radio-group.blue paper-radio-button::shadow #ink[checked] {
-   color: #4285f4;
-}
-
-paper-radio-group.blue paper-radio-button::shadow #onRadio {
-   background-color: #4285f4;
-}
-paper-toggle-button.blue::shadow paper-radio-button::shadow #ink[checked] {
-   color: #4285f4;
-}
-
-paper-toggle-button.blue::shadow paper-radio-button::shadow #onRadio {
-   background-color: #4285f4;
-}
-
-paper-toggle-button.blue::shadow #toggleBar[checked] {
-   background-color: #4285f4;
-}
-paper-slider {
-   width: 100%;
-}
-section > div {
+   h1 {
+      text-align: center;
+   }
+   body {
+      font-family:'Helvetica Neue', Helvetica, Arial;
+      margin-top: 0;
+      padding: 0;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0,0,0,0);
+      -webkit-touch-callout: none;
+   }
+   paper-checkbox {
+      padding: 20px 20px 20px 0;
+   }
+   section {
+      width: 350px;
+   }
+   paper-checkbox.blue::shadow #ink[checked] {
+      color: #4285f4;
+   }
+   paper-checkbox.blue::shadow #checkbox.checked {
+      border-color: #4285f4;
+   }
+   paper-radio-group.blue paper-radio-button::shadow #ink[checked] {
+      color: #4285f4;
+   }
+   paper-radio-group.blue paper-radio-button::shadow #onRadio {
+      background-color: #4285f4;
+   }
+   paper-toggle-button.blue::shadow paper-radio-button::shadow #ink[checked] {
+      color: #4285f4;
+   }
+   paper-toggle-button.blue::shadow paper-radio-button::shadow #onRadio {
+      background-color: #4285f4;
+   }
+   paper-toggle-button.blue::shadow #toggleBar[checked] {
+      background-color: #4285f4;
+   }
+   paper-slider {
+      width: 100%;
+   }
+   section > div {
       padding: 14px;
-    }
-
-.yellow-slider paper-slider::shadow #sliderKnobInner,
-.yellow-slider paper-slider::shadow #sliderBar::shadow #activeProgress {
-      background-color: #f4b400;
-}
-
-.green-slider paper-slider::shadow #sliderKnobInner,
-.green-slider paper-slider::shadow #sliderKnobInner::before,
-.green-slider paper-slider::shadow #sliderBar::shadow #activeProgress {
-      background-color: #0f9d58;
-}
-
-#ratingsLabel {
-      padding-left: 12px;
-      color: #a0a0a0;
-}
+   }
+   .yellow-slider paper-slider::shadow #sliderKnobInner,
+   .yellow-slider paper-slider::shadow #sliderBar::shadow #activeProgress {
+         background-color: #f4b400;
+   }
+   .green-slider paper-slider::shadow #sliderKnobInner,
+   .green-slider paper-slider::shadow #sliderKnobInner::before,
+   .green-slider paper-slider::shadow #sliderBar::shadow #activeProgress {
+         background-color: #0f9d58;
+   }
+   #ratingsLabel {
+         padding-left: 12px;
+         color: #a0a0a0;
+   }
 </style>
 
 <!--END PAGE SPECIFIC STYLES -->
+
 
 <!--LOAD NAVBAR -->
 
@@ -82,12 +71,13 @@ section > div {
 
 <!--END NAVBAR -->
 
+
 <!--POLYMER VOICE ELEMENTS -->
 
-<voice-player id="mi-elemento" accent="en-US" text="Behold! The future of the web lies before you. Scroll down and enjoy"></voice-player>
+<voice-player id="my-element" accent="en-US" text="Behold! The future of the web lies before you. Scroll down and enjoy"></voice-player>
 <script>
-var form = document.querySelector('#mi-form'),
-element = document.querySelector('#mi-elemento');
+var form = document.querySelector('#my-form'),
+element = document.querySelector('#my-element');
 
 form.addEventListener('submit', function(e) {
    e.preventDefault();
@@ -95,8 +85,8 @@ form.addEventListener('submit', function(e) {
 });
 </script>
 
-<form id="mi-form">
-   <button class="btn btn-primary" style="display: block; padding: 6px 12px; margin-bottom: 0; font-size: 14px; vertical-align: middle; border: 1px solid transparent; border-radius: 4px; margin: 40px auto 0 auto;">Voice Elements</button>
+<form id="my-form">
+   <button class="btn btn-primary" style="display: block; padding: 6px 12px; font-size: 14px; margin: 40px auto 0 auto;">Voice Elements</button>
 </form>
 
 <!-- END POLYMER VOICE ELEMENTS -->
@@ -203,7 +193,7 @@ form.addEventListener('submit', function(e) {
 
 <h1>Next-Gen Input</h1>
 <br>
-<section>
+<section class= "row">
 
     <paper-input label="Type something..."></paper-input>
 
@@ -234,7 +224,7 @@ form.addEventListener('submit', function(e) {
 
 <!--BEGIN POLYMER SLIDER ELEMENTS-->
 <h1>Sliders</h1>
- <section class="yellow-slider" style="width:600px;">
+ <section class="row yellow-slider" style="width:600px;">
 
     <div>Notifications</div>
     <paper-slider value="50"></paper-slider>
@@ -310,6 +300,8 @@ form.addEventListener('submit', function(e) {
   </div>
 <br>
 <br>
+
+<h1>GetUserMedia API</h1>
 <br>
 <div>
    <section style="margin: 0 auto;">
