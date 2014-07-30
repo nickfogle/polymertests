@@ -312,13 +312,13 @@ form.addEventListener('submit', function(e) {
 <br>
 <br>
 <div>
-   <section style="background: #4285f4; width: 700px; margin: 0 auto;">
+   <section style="margin: 0 auto;">
 
-    <button onclick="document.querySelector('#collapse1').toggle()">toggle collapse</button>
+    <button onclick="document.querySelector('#collapse1').toggle()">Video Toggle</button>
 
     <core-collapse id="collapse1" fixedSize class="box" style="height: auto;">
-      <div class="content">
-         <video is="video-camera" autoplay></video>
+      <div class="content" style="margin: 0 auto;">
+         <video is="video-camera" style="height:auto; width: 100%;" autoplay></video>
       </div>
     </core-collapse>
 
