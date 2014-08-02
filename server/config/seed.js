@@ -11,13 +11,13 @@ var User = require('../api/user/user.model');
 Thing.find({}).remove(function() {
   Thing.create({
     name : 'Full-Stack Web App',
-    info : 'Integrated with popular tools like Bower, Grunt, Karma, Mocha, JSHint, Livereload, Protractor, Jade, Sass, CoffeeScript, and Less.'
+    info : 'Integrated with the following tools: Bower, Grunt, Karma, Mocha, JSHint, Livereload, Protractor, Jade, Sass, and CoffeeScript.'
   }, {
     name : 'Server and Client integration',
     info : 'Built with a powerful and fun stack: MongoDB, Express, AngularJS, and Node.'
   }, {
     name : 'Smart Build System',
-    info : 'Build system ignores `spec` files, allowing you to keep tests alongside code. Automatic injection of scripts and styles into your index.html'
+    info : 'Build system ignores `spec` files, allowing you to keep tests alongside code. Automatic injection of scripts and styles into index.html'
   },  {
     name : 'Modular Structure',
     info : 'Best practice client and server structures allow for more code reusability and maximum scalability'
