@@ -17,3 +17,4 @@ karma.conf.js
 .travis.yml
 .yo-rc.json
 .editorconfig
+_tmp
