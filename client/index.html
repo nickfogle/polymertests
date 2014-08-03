@@ -10,8 +10,22 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <!-- build:js(client) app/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/polymer/polymer.js"></script>
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/json3/lib/json3.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/angular-socket-io/socket.js"></script>
+      <!-- endbower -->
+    <!-- endbuild -->
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <script src="bower_components/platform/platform.js"></script>
     <!-- build:css(client) app/vendor.css -->
       <!-- bower:css -->
       <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
@@ -65,21 +79,7 @@
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
     <script src="socket.io/socket.io.js"></script>
-    <!-- build:js(client) app/vendor.js -->
-      <!-- bower:js -->
-      <script src="bower_components/jquery/dist/jquery.js"></script>
-      <script src="bower_components/angular/angular.js"></script>
-      <script src="bower_components/json3/lib/json3.js"></script>
-      <script src="bower_components/angular-resource/angular-resource.js"></script>
-      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-      <script src="bower_components/angular-route/angular-route.js"></script>
-      <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
-      <script src="bower_components/angular-socket-io/socket.js"></script>
-      <script src="bower_components/polymer/polymer.js"></script>
-      <!-- endbower -->
-    <!-- endbuild -->
+
 
         <!-- build:js({.tmp,client}) app/app.js -->
         <script src="app/app.js"></script>
