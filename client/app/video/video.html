@@ -19,7 +19,10 @@
 <br>
 <div>
    <section style="margin: 0 auto;">
-    <button class="btn btn-success btn-large" onclick="document.querySelector('#collapse1').toggle()"><i class="icon-white icon-facetime-video"></i> Toggle Video</button>
+    <div class="switch" onclick="document.querySelector('#collapse1').toggle()">
+      <input type="checkbox">
+      <label><i></i></label>
+    </div>
 
     <core-collapse id="collapse1" fixedSize class="box" style="height: auto;">
       <div class="content" style="margin: 0 auto;">
