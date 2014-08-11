@@ -109,18 +109,28 @@ margin-bottom: 15px;
 </div>
 <br>
 <br>
-<voice-recognition id="recognition-element"></voice-recognition>
+<h1 class="ng-scope">At your service.</h1>
+<voice-player autoplay="" accent="en-GB" text="Awaiting your orders, Master." class="ng-scope"></voice-player>
 
-<form id="recognition-form" class="pure-form">
-      <fieldset>
-            <textarea id="recognition-input" readonly=""></textarea>
+<div class="row ng-scope">
+  <div class="span4"></div>
+  <div class="span6">
+    <form id="recognition-form" class="pure-form ng-pristine ng-valid">
+      <fieldset style="width:100%!important">
+        <textarea id="recognition-input" readonly="readonly" style="width:100%!important; color:black!important"></textarea>
       </fieldset>
       <fieldset>
-            <button id="recognition-submit" class="pure-button pure-button-primary">Record</button>
+        <button id="recognition-submit" class="btn btn-lg btn-success">Go.</button>
       </fieldset>
-</form>
+    </form>
+  </div>
+  <div class="span4"></div>
 
-<script>
+</div>
+
+<voice-recognition id="recognition-element" class="ng-scope"></voice-recognition>
+
+<script class="ng-scope">
 var form = document.querySelector('#recognition-form'),
     input = document.querySelector('#recognition-input'),
     element = document.querySelector('#recognition-element');
@@ -133,7 +143,7 @@ form.addEventListener('submit', function(e) {
 element.addEventListener('result', function(e) {
     input.textContent = e.detail.result;
 });
-</script>
+</script></div>
 </div>
 
 <footer class="footer">
