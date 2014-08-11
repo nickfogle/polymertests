@@ -111,6 +111,15 @@ margin-bottom: 15px;
 <br>
 <voice-recognition id="recognition-element"></voice-recognition>
 
+<form id="recognition-form" class="pure-form">
+      <fieldset>
+            <textarea id="recognition-input" readonly=""></textarea>
+      </fieldset>
+      <fieldset>
+            <button id="recognition-submit" class="pure-button pure-button-primary">Record</button>
+      </fieldset>
+</form>
+
 <script>
 var form = document.querySelector('#recognition-form'),
     input = document.querySelector('#recognition-input'),
