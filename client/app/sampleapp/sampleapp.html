@@ -1,42 +1,59 @@
 <style>
-   core-header-panel {
-  background: white;
-  /* height: 100% fails here on some browsers */
-  height: 100vh;
-  width: 100vw;
-}
-core-toolbar {
-  background-color: #4393B9;
-}
+
 p {
   margin: 20px;
   padding: 80px 20px;
   border-radius: 20px;
   background-color: #eee;
 }
+
+body {
+  font-family: sans-serif;
+}
+core-header-panel {
+  background: white;
+}
+core-toolbar {
+  background-color: #4393B9;
+}
+#navheader {
+  background-color: #56BA89;
+}
+.content {
+  padding: 20px;
+}
+/* drawer is always visible on a wide screen
+   so menu button isn't required */
+core-drawer-panel:not([narrow]) #navicon {
+  display: none;
+}
 </style>
 
 
 
 <body fullbleed unresolved>
-  <core-header-panel>
-   <core-toolbar class="medium-tall">
+  <core-drawer-panel id="drawerPanel">
 
-     <paper-icon-button id="navicon"
-      icon="menu"></paper-icon-button>
+  <core-header-panel drawer>
+    <core-toolbar id="navheader'">
+      <span>Menu</span>
+    </core-toolbar>
+    <core-menu>
+      <core-item label="One"></core-item>
+      <core-item label="Two"></core-item>
+    </core-menu>
+   </core-header-panel>
 
-     <span flex>Title</span>
-
-     <paper-icon-button id="morebutton"
-      icon="more-vert"></paper-icon-button>
-
-     <paper-tabs class="bottom fit">
-      <paper-tab>ONE</paper-tab>
-      <paper-tab>TWO</paper-tab>
-     <paper-tabs>
-
-   </core-toolbar>
-    <p>this polymer web app layout took 30 seconds to build...</p>
-    <p>each UI element is already styled and prebuilt. notice that this is fully responsive.</p>
+  <core-header-panel main>
+    <core-toolbar id="mainheader">
+      <paper-icon-button
+        id="navicon" icon="menu"></paper-icon-button>
+      <span flex>Title</span>
+    </core-toolbar>
+    <div class="content">
+      If drawer is hidden, press button to display drawer.
+    </div>
   </core-header-panel>
+
+</core-drawer-panel>
 </body>
