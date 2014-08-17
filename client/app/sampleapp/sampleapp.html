@@ -1,68 +1,35 @@
-<style>
-
-p {
-  margin: 20px;
-  padding: 80px 20px;
-  border-radius: 20px;
-  background-color: #eee;
-}
-
-body {
-  font-family: sans-serif;
-}
-core-header-panel {
-  background: white;
-}
-core-toolbar {
-  background-color: #4393B9;
-}
-#navheader {
-  background-color: #56BA89;
-}
-.content {
-  padding: 20px;
-}
-/* drawer is always visible on a wide screen
-   so menu button isn't required */
-core-drawer-panel:not([narrow]) #navicon {
-  display: none;
-}
-</style>
-
-
-
-<body fullbleed unresolved>
-  <core-drawer-panel id="drawerPanel">
-
-  <core-header-panel drawer>
-    <core-toolbar id="navheader'">
-      <span>Menu</span>
-    </core-toolbar>
-    <core-menu>
-      <core-item label="One"></core-item>
-      <core-item label="Two"></core-item>
-    </core-menu>
-   </core-header-panel>
-
-  <core-header-panel main>
-    <core-toolbar id="mainheader">
-      <paper-icon-button
-        id="navicon" icon="menu"></paper-icon-button>
-      <span flex>Title</span>
-    </core-toolbar>
-    <div class="content">
-      If drawer is hidden, press button to display drawer.
-    </div>
-  </core-header-panel>
-
-</core-drawer-panel>
-<script>
-document.addEventListener('polymer-ready', function() {
-  var navicon = document.getElementById('navicon');
-  var drawerPanel = document.getElementById('drawerPanel');
-  navicon.addEventListener('click', function() {
-    drawerPanel.togglePanel();
-  });
+<!-- Widget BEGIN -->
+<script type="text/javascript" src="https://d33t3vvu2t2yu5.cloudfront.net/tv.js"></script>
+<script type="text/javascript">
+new TradingView.widget({
+  "autosize": true,
+  "symbol": "NYSE:INVN",
+  "interval": "D",
+  "timezone": "exchange",
+  "theme": "White",
+  "style": "1",
+  "toolbar_bg": "#f1f3f6",
+  "withdateranges": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "watchlist": [
+    "CGIX",
+    "MDWD",
+    "WPRT",
+    "INVN",
+    "KIPS",
+    "ECOM"
+  ],
+  "details": true,
+  "hotlist": true,
+  "calendar": true,
+  "news": [
+  	"headlines",
+    "stocktwits"
+  ],
+  "show_popup_button": true,
+  "popup_width": "800",
+  "popup_height": "600"
 });
 </script>
-</body>
+<!-- Widget END -->
