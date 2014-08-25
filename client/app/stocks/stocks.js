@@ -3,8 +3,8 @@
 angular.module('polymertestApp')
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/sampleapp', {
-        templateUrl: 'app/sampleapp/sampleapp.html',
+      .when('/stocks', {
+        templateUrl: 'app/stocks/stocks.html',
         controller: 'SampleAppCtrl'
       });
   });
