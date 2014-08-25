@@ -5,6 +5,6 @@ angular.module('polymertestApp')
     $routeProvider
       .when('/stocks', {
         templateUrl: 'app/stocks/stocks.html',
-        controller: 'SampleAppCtrl'
+        controller: 'StockCtrl'
       });
   });

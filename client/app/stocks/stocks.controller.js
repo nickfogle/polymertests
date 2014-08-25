@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('polymertestApp')
-  .controller('SampleAppCtrl', function ($scope, $http, Auth, User) {
+  .controller('StockCtrl', function ($scope, $http, Auth, User) {
 
     $http.get('/api/users').success(function(users) {
       $scope.users = users;
